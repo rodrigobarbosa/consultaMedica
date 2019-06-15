@@ -1,0 +1,43 @@
+Regras de Negócio:
+
+1. não pode haver o mesmo agendamento pra mesma hora e mesma data;
+2. não pode haver agendamento com data retroativa;
+3. pode cancelar agendamentos de consultas (permitir realização de agendamentos);
+4. no cadastro do médico, ele tem que ter cadastrados os dias de atendimento;
+5. o médico pode cancelar a consulta;
+
+
+Requisitos do Projeto:
+
+1. cadastrar:
+	- paciente;
+		- nome;
+		- cpf;
+		- identificacao;
+	- médico;
+		- nome;
+		- cpf;
+		- 
+	- consulta;
+		- data;
+		- tipo;
+		- identificador;
+		- medico;
+		- 
+
+2. agendamento;
+
+3. consultas por período;
+
+4. agendamento por período;
+
+5. consultar pacientes;
+
+6. cancelar consulta;
+
+7. cancelar agendamento;
+
+8. reagendamento de consulta;
+
+
+

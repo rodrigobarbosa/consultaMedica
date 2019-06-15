@@ -13,7 +13,7 @@ public class Contato {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private String id;
+	private Long id;
 	
 	@Column(name="nome_contato")
 	private String nome;
@@ -28,11 +28,11 @@ public class Contato {
 		
 	}
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

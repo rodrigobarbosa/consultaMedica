@@ -8,41 +8,39 @@ import br.com.consultaMedica.model.Contato;
 public class ContatoService implements IContato{
 	
 	// ANTIGAMENTE ERA FEITO DESSA FORMA ABAIXO, USANDO O DAO;
-
 	private ContatoDAO dao;
 	
 	public ContatoService() { 
 		this.dao = new ContatoDAO();
 	}
-	
 	// ANTIGAMENTE ERA FEITO DESSA FORMA ACIMA, USANDO O DAO;
 
 	public void salvar(Contato contato) {
-		
-	}
-	
-	public void remover(Long idContato) {
-		
-	}
-	
-	public List<Contato> listarContatos() {
-		return null;
+		this.dao.salvar(contato);
 	}
 	
 	public void editar(Contato contato) {
-		
+		this.dao.editar(contato);
+	}
+
+	public void remover(Long idContato) {
+		this.dao.remover(idContato);
 	}
 	
+	public List<Contato> listarContatos() {
+		return this.dao.contatos();
+	}
+	
+	public Contato buscaPorId(Long idContato) {
+		return this.dao.buscaPorId(idContato);
+	}
+
 	public Contato buscaContatoNome(String nome) {
-		return null;
+		return this.dao.buscaPorNome(nome);
 	}
 	
 	public Contato buscaContatoEmail(String email) {
-		return null;
+		return this.dao.buscaPorEmail(email);
 	}
 
-	@Override
-	public Contato buscaPorId(Long idContato) {
-		return null;
-	}
 }

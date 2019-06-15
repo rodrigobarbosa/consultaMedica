@@ -5,13 +5,13 @@
                                  http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
              version="2.1">
  
-    <persistence-unit name="consultemed" transaction-type="RESOURCE_LOCAL">
+    <persistence-unit name="consultaMedica" transaction-type="RESOURCE_LOCAL">
         
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
        	
         <properties>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/consultemed"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/consultamedica"/>
             <property name="hibernate.connection.username" value="root"/>
             <property name="hibernate.connection.password" value="root"/>
             
